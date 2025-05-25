@@ -1,3 +1,10 @@
+# NAME : DHANAAAKHAASH S.T
+# REG.NO : 212224240032
+# BRANCH : AIML
+
+
+
+
 # EX-16-LEFT-SHIFT-OPERATION
 ## AIM
 To write a C Program to perform the basic left shift operation for 44 integer number with 3 shifts.
@@ -9,10 +16,19 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 4.	Display the result.
 5.	Stop the program.
 
-## PROGRAM
+## PROGRAM:
+```
+#include<stdio.h>
+int main(){
+    int a=44;
+    a=a<<3;
+    printf("After Left Shift Operation value of a is:%d",a);
+}
+```
 
 ## OUTPUT
 
+![16](https://github.com/user-attachments/assets/a7a9aad7-f4cc-4db4-b3e8-d59a18dc5539)
 
 
 
@@ -47,9 +63,30 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
 
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a==b)
+    {
+        printf("X is equal to Y");
+    }
+    else
+    {
+        printf("X is NOT equal to Y");
+    }
+    return 0;
+}
+```
 
 ## OUTPUT
+
+![17](https://github.com/user-attachments/assets/0f485be6-1fc9-4aa5-a74a-ca69557e62dd)
+
+
            
 ## RESULT
 
@@ -70,9 +107,28 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+```
+
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    for(int i=0;str[i] != '\0';i++)
+    {
+        str[i] = tolower(str[i]);
+    }
+    printf("Lower case String is:%s",str);
+    return 0;
+}
+
+
+```
 
 ## OUTPUT
 
+![18](https://github.com/user-attachments/assets/30e908db-3f23-4ab7-a2f6-09528db1a52a)
 
 
 
@@ -95,9 +151,25 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    int l=0;
+    fgets(a,sizeof(a),stdin);
+    while(a[l]!='\0')
+    {
+        l++;
+    }
+    printf("%d",l-1);
+    return 0;
+}
+```
 
 ## OUTPUT
 
+![19](https://github.com/user-attachments/assets/34df5f65-20e3-41cd-af45-4dc68636f523)
 
 
 
@@ -129,9 +201,33 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+```
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[10];
+    char srt[10];
+    scanf("%s",str);
+    scanf("%s",srt);
+    int s = strcmp(str,srt);
+    if(s==0)
+    {
+        printf("strings are same");
+    }
+    else
+    {
+        printf("strings are not same");
+    }
+    return 0;
+}
 
+```
 
 ## OUTPUT
+
+![20](https://github.com/user-attachments/assets/fc010e9d-aa45-49a0-86d5-ed89c54f3592)
+
  
 
 ## RESULT
